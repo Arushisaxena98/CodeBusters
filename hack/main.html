@@ -1,0 +1,124 @@
+<html>
+
+<head>
+<link rel="stylesheet" type="text/css" href="css/common.css" />
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<title>Project Mania</title>
+</head>
+<style type="text/css">
+#content-wrap{
+	display:none;
+	margin:auto;
+	}
+.content-wrap{
+	background-image: url('/hack/images/try.jpg');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	}
+	
+</style>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 600, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+
+<body id="content-wrap">
+	<div class="content-wrap">
+	<div id="divmain">
+		<div class="divmain1">
+			<p>Project Portal
+		</div>
+		<div style="width:10%;">
+			<p><a>How it Works</a>
+		</div>
+		<div style="width:10%;">
+			<p><a href=#about>About</a>
+		</div>
+		<div style="width:10%;">
+			<p><a href=#contact>Contact us</a>
+		</div>
+		<div class="divmain4">
+			<p id="Login">LOGIN
+		</div>
+	</div>
+	
+	<div style="margin-top:7%;">
+		<div>
+			<p class="pclass">Search For Projects 
+		</div>
+		<div style="margin: 0px auto;width: 670px;">
+			<input style="padding:15px;width:680px;" type="text" placeholder="Enter Project Name or Keyword"></input>
+		</div>
+		<div style="margin-top:10px;">
+		<hr id="hr1"><p class="pclass orclass">OR<hr id="hr2">
+		</div>
+	</div>
+	
+	<div>
+		<div>
+			<p class="pclass contriclass">Become a contributer?
+			<br>You can become one 
+			<br>for FREE!</p>
+		</div>
+		<div style="margin:40px auto;width: 12%;">
+			<input class="classbutton" type="button" value="Sign Up For Free">
+		</div>
+	</div>
+	<hr style="margin-top:9%;">
+	</div>
+	
+	
+	<div class="">
+			<p id="about" class="about">About<br>
+			<p class="about1">CODEBUSTERS is a project designed and implemented by a group of 3rd year B.Tech students studying in Inderprastha Engineering College under an ongoing competition HACKATHON-2017.
+
+The team members include-
+   <ul style="font-family:Roboto,sans-serif;">
+	<li>Arushi Saxena</li>
+	<li>Harshit Gola</li>
+	<li>Mayank Salwan</li>
+	<li>Mayuri Gupta </li>
+   </ul>
+<p class="about1">This project is to cater to today&lsquo;s generation has mixed mentality. Students often become confuse when it comes to their school and college projects. They know things but can&lsquo;t project them correctly due to either lack of confidence or lack of knowledge. We are providing a platform where these students can get help from the students across the country. Also the students / professionals across the nation can come forward and share their ideas/projects with everyone. Also, It is seen that collaborative projects help bring equally minded students together for bigger opportunities to attend afterwards.
+
+		</div>
+		<hr>
+		
+		<div>
+			<p id="contact" class="about">Contact Us<br>
+			<p class="about1">You can contact us at:
+<br>Phone no.: 9899395131, 9990063715
+<br>Email ID: codebusters2k17@gmail.com
+
+		</div>
+	</div> 
+
+</body>
+</html>
+<script type="text/javascript">
+$(document).ready(function()
+{	$('#content-wrap').fadeIn('slow');
+});
+</script>

@@ -1,0 +1,135 @@
+
+
+@font-face{
+	font-family: 'Roboto';
+	src:url('../resources/fonts/Roboto/RobotoCondensed-Regular.ttf')
+	}
+
+#divmain{
+	width: 100%;
+	display:flex;
+	font-family: Roboto,sans-serif;
+	}
+	
+.divmain1{
+	width:60%;
+	font-family: Roboto,sans-serif;
+}
+.divmain4{
+	width:10%;
+	font-family: Roboto,sans-serif;
+}
+#Login{
+	text-align: center;
+    border-style: hidden;
+    background-color: #95d21a;
+    padding: 10px;
+    margin-top: 7px;
+}
+.pclass{
+	font-family: Roboto,sans-serif;
+	text-align:center;
+	font-size:50px;
+	color:#95d21a;
+}
+.orclass{
+	font-size:20px;
+}
+.contriclass{
+	font-size:25px;
+}
+#hr1{
+	width: 230px;
+    display: inline-block;
+    margin-left: 20%;
+    margin-bottom: -40px;
+    margin-top: 35px;
+}
+#hr2{
+	width: 230px;
+    display: inline-block;
+    margin-left: 61%;
+    margin-top: -30px;
+}
+	
+.classbutton{
+	font-family: Roboto,sans-serif;
+    width: 100%;
+    border-style: hidden;
+    padding: 10px;
+}
+
+.about{
+	text-align:center;
+	font-family: Roboto,sans-serif;
+	font-size:25px;
+}
+.about1{
+	text-align:center;
+	font-family: Roboto,sans-serif;
+	font-size:17px;
+}
+/* .divmaintext{
+	width: 50%;
+	text-align:center;
+	margin:auto;
+	color: #9acd32;
+	font-size: 105px;
+	font-family: Roboto,sans-serif;
+	}
+	
+.divin{
+	position: relative;
+	float:right;
+}
+.bodymain{
+	overflow-x:hidden;
+	background-image: url('/hackathon/images/try.jpg');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+.bu{
+	border-style: inherit;
+    padding: 4px;
+    width: 5%;
+    border-radius: 4px;
+    color: whitesmoke;
+    background-color: yellowgreen;
+}
+.inp{
+	padding: 3px;
+    border-style: hidden;
+    border-radius: 4px;
+}
+.buttond{
+	font-size:15px;
+	font-family:Roboto,sans-serif;
+	padding: 11px;
+	    border-style: hidden;
+    width: 12%;
+    background: #68960a;
+    color: aliceblue;
+}
+.buttoncl{
+	position:relative;
+	top:205px;
+	width:100%;
+	margin-left:39%;
+}
+.foter{
+	width: 100%;
+	color:grey;
+    background-color: black;
+    position: fixed;
+    left: 0px;
+    bottom: 1px;
+    height: 32px;
+}
+#menu{
+	float:right;
+	margin-top:6px;
+}
+ul#menu li{
+	display:inline;
+}
+ */
