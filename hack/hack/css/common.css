@@ -9,12 +9,22 @@
 	width: 100% !important ;
 	display:flex !important ;
 	font-family: Roboto,sans-serif !important ;
+	position: fixed;
+    margin-top: -13%;
+    background-color: black;
+    height: 55px;
+    /* opacity: 0.6; */
+    background: rgba(0, 16, 42,0.6);
 	}
 	
 .divmain1{
 	width:55% !important ;
 	font-family: Roboto,sans-serif !important ;
 	font-size:25px !important ;
+}
+.textcol{
+	text-decoration:none;
+	color:#f0f8ff;
 }
 .divmain4{
 	width:10% !important ;
@@ -61,17 +71,16 @@
     width: 100%;
     border-style: hidden;
     padding: 10px;
+	margin-bottom:50%;
 }
 
 .about{
-	text-align:center;
-	font-family: Roboto,sans-serif;
-	font-size:25px;
-}
-.about1{
-	text-align:center;
-	font-family: Roboto,sans-serif;
-	font-size:17px;
+	text-align: center;
+    font-family: Roboto,sans-serif;
+    font-size: 25px;
+    color: #20b2aa;
+    margin-bottom: -20px;
+    margin-top: 45px;
 }
 
 .projec{
@@ -80,16 +89,15 @@
 	font-size:25px;
 }
 .project1{
-	text-align:center;
-	font-family: Roboto,sans-serif;
-	font-size:17px;
+	text-align: center;
+    font-family: Roboto,sans-serif;
+    font-size: 17px;
+    color: gold;
+    word-spacing: 6px;
+    padding: 12px;
+    margin-top: 40px;
 }
 
-.contact{
-	text-align:center;
-	font-family: Roboto,sans-serif;
-	font-size:25px;
-}
 .contact1{
 	text-align:center;
 	font-family: Roboto,sans-serif;
@@ -259,7 +267,13 @@
   box-sizing: border-box;
   font-size: 14px;
 }
-   
+.Mainmania{
+	color: gold;
+    font-family: monospace;
+    font-size: 35px;
+    margin-top: 0px;
+}
+
 
 .form input[type]:focus {
     box-shadow: 0px 1px 15px -1px gray;
@@ -330,4 +344,31 @@
     left: 0px;
     bottom: 0px;
     height: 32px;
+	display:flex;
+}
+#paraid, #parasubid{
+	color: gold;
+    font-size: 18px;
+    font-family: cursive;
+	padding-left: 30%;
+}
+.foota{
+	padding-left: 15px;
+    text-decoration: none;
+    color: aliceblue;
+}
+#like{
+	height: 23px;
+    width: 23px;
+    margin-left: 90%;
+    position: fixed;
+    padding: 2px;
+}
+
+#google{
+	height: 23px;
+    width: 23px;
+    position: fixed;
+    margin-left: 93%;
+    padding: 4px;
 }
