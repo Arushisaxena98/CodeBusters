@@ -12,7 +12,11 @@
 		//{
 			
 			$username = test_input($_POST['username']);
-		if(!$username=="")	
+			if(validateInputs($username))
+			{	
+				$usernameErr = "Username can not be empty !";
+			}
+		if(!$usernameErr=="")	
 		{
 			//if (!preg_match("/^[a-zA-Z0-9 ]*$/",$username)) $usernameErr = "Only alphanumeric characters allowed in Username !";
 		
@@ -38,7 +42,9 @@
 					} */
 					
 					$rows = mysqli_fetch_array($result);
-					redirect('../html/try.html');
+					$_SESSION['project_username_logged_in'] = true;
+					$_SESSION['project_username'] = $rows["Name"];
+					redirect('userloggedin.php');
 					
 					/*if($username == "admin")
 					{
@@ -52,14 +58,14 @@
 				else 
 				{
 					echo "<script type='text/javascript'> alert('Invalid Username and/or Password!');</script>";	
-					redirect('../main.html');
+					redirect('../main.php');
 				}
 				
-			}
-			else 
+		}
+		else 
 			{
-				
-				redirect('../main.html');
+				echo "<script type='text/javascript'> alert('Username can not be empty !');</script>";
+				redirect('../main.php');
 			}
 			
 		
