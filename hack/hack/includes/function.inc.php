@@ -6,9 +6,9 @@
 	}
 	function check_login_status() 
 	{
-		if (isset($_SESSION['hpcs_admin_logged_in'])) 
+		if (isset($_SESSION['project_username_logged_in'])) 
 		{
-			return $_SESSION['hpcs_admin_logged_in'];
+			return $_SESSION['project_username_logged_in'];
 		}
 		return false;
 	}
@@ -16,7 +16,7 @@
 	{
 		if (check_login_status() == false) 
 		{
-			redirect('../index.php');
+			redirect('../main.php');
 		}
 	}
 	function kh_sendEmail($type,$name,$phone,$email,$checkin,$checkout)
