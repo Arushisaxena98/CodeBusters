@@ -70,13 +70,13 @@ $(document).ready(function(){
 			<p class='Mainmania'>Project Mania
 		</div>
 		<div style='width:15%;'>
-			<p><a href=#mania style='text-decoration:none;'>What is Project Mania</a>
+			<p><a href=#mania class='textcol'>What is Project Mania</a>
 		</div>
 		<div style='width:10%;'>
-			<p><a href=#about style='text-decoration:none;'>About</a>
+			<p><a href=#about class='textcol' style='padding-left:20px;'>About</a>
 		</div>
 		<div style='width:10%;'>
-			<p><a href=#contact style='text-decoration:none;'>Contact us</a>
+			<p><a href=#contact class='textcol'>Contact us</a>
 		</div>
 		<div class='divmain4'>
 			<p id='Login'>LOGIN
@@ -84,8 +84,8 @@ $(document).ready(function(){
 	</div>
 	<div id='id02' class='login-page'>
 		<div class='form'>
-			<form class='login-form' method='post' action='../hack/php/login.php'>
-			<input type='text' name='username' placeholder='username' required>
+			<form class='login-form' method='post' action='php/login.php'>
+			<input type='text' name='username' placeholder='username'>
 			<input type='password' name='pass' placeholder='password' required>
 			<button>Go</button>
 			<p class='message'>Not registered? <a href='#' onclick='document.getElementById(`id01`).style.display=`block`'>Create an account</a></p>
@@ -93,7 +93,7 @@ $(document).ready(function(){
 		</div>
 	</div>
 	
-	<div style='margin-top:7%;'>
+	<div style='margin-top:13%;'>
 		<div>
 			<p class='pclass'>Search For Projects 
 		</div>
@@ -101,8 +101,11 @@ $(document).ready(function(){
 			<input id='inputtext' style='padding:15px;width:680px;' type='text' placeholder='Enter Project Name or Keyword' autofocus><span class='glyphicon glyphicon-search'> </span></input>
 		</div>
 		
+	<div id='cat' style='display:none;'>
+	<p id='paraid' value=></p>
+	</div>
 	<div id='subcat' style='display:none;'>
-	<p id='paraid'></p>
+	<p id='parasubid'></p>
 	</div>	
 		
 		<div style='margin-top:10px;'>
@@ -120,10 +123,11 @@ $(document).ready(function(){
 			<a href='#' onclick='document.getElementById(`id01`).style.display=`block`'><input class='classbutton' type='button' value='Sign Up'></a>
 		</div>
 	</div>
-	<hr style='margin-top:9%;'>
+	<hr id='mania' style='margin-top:9%;'>
 	</div>
+	
 	<div id='maniawall'>
-		<p id='mania' class='project'>What Is Project Mania<br>
+		<p class='about'>What Is Project Mania<br>
 		<p class='project1'>ProjectMania works to achieve a simple concept- to connect as many as students from across the country and gather all the ingenious ideas. This website helps to inculcate students and professionals into a group where they can collaborate and bring together equally minded students together for bigger opportunities to attend afterwards.
 Come and join the sensation! 
 For more information on how to sign up and start using ProjectMania check out our other FAQ’s. We're excited that you've come to check out what ProjectMania is and what we're about. Now go put your feet up and enjoy a great time with us.
@@ -132,23 +136,23 @@ For more information on how to sign up and start using ProjectMania check out ou
 	
 	<div>
 		<p id='about' class='about'>About<br>
-		<p class='about1'>CODEBUSTERS is a project designed and implemented by a group of 3rd year B.Tech students studying in Inderprastha Engineering College under an ongoing competition HACKATHON-2017.
+		<p class='project1'>CODEBUSTERS is a project designed and implemented by a group of 3rd year B.Tech students studying in Inderprastha Engineering College under an ongoing competition HACKATHON-2017.
 
 The team members include-
-   <ul style='font-family:Roboto,sans-serif;'>
+   <ul style='color: gold;font-family:Roboto,sans-serif;'>
 	<li>Arushi Saxena</li>
 	<li>Harshit Gola</li>
 	<li>Mayank Salwan</li>
 	<li>Mayuri Gupta </li>
    </ul>
-<p class='about1'>This project is to cater to today&lsquo;s generation has mixed mentality. Students often become confuse when it comes to their school and college projects. They know things but can&lsquo;t project them correctly due to either lack of confidence or lack of knowledge. We are providing a platform where these students can get help from the students across the country. Also the students / professionals across the nation can come forward and share their ideas/projects with everyone. Also, It is seen that collaborative projects help bring equally minded students together for bigger opportunities to attend afterwards.
+<p class='project1'>This project is to cater to today&lsquo;s generation has mixed mentality. Students often become confuse when it comes to their school and college projects. They know things but can&lsquo;t project them correctly due to either lack of confidence or lack of knowledge. We are providing a platform where these students can get help from the students across the country. Also the students / professionals across the nation can come forward and share their ideas/projects with everyone. Also, It is seen that collaborative projects help bring equally minded students together for bigger opportunities to attend afterwards.
 
 		</div>
 		<hr>
 		
 		<div>
-			<p id='contact' class='contact'>Contact Us<br>
-			<p class='contact1'>You can contact us at:
+			<p id='contact' class='about'>Contact Us<br>
+			<p class='project1'>You can contact us at:
 <br>Phone no.: 9899395131, 9990063715
 <br>Email ID: codebusters2k17@gmail.com
 
@@ -180,36 +184,15 @@ The team members include-
 	</form>
 	</div>
 	<footer class='foter'>
-	<span class='glyphicon glyphicon-off'> </span>
+	<a href='html/faqpm.html' class='foota'>FAQ</a>
+	<div>
+	<img src='images/like.png' id='like'>
+	</div>
+	<div>
+	<img src='images/google.png' id='google'>
+	</div>
 	</footer>
 </body>
 </html>
-<script type='text/javascript'>
-var modal = document.getElementById('id01');
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = 'none';
-    }
-}
-
-$(document).ready(function()
-{	$('#content-wrap').fadeIn('slow');
-	$('#Login').click(function(){
-		$('#id02').slideToggle();
-	});
-	$('#inputtext').keypress(function() {
-		var sub=$('#inputtext').val();
-		console.log(sub);
-		$.post('getlist.php',
-		{
-			sub : sub,
-		}, function(data)
-		{ 	console.log(data);
-			$('#paraid').html(data);
-		});
-		$('#subcat').slideDown('fast');
-		});
-});
-</script>";
+<script type='text/javascript' src='js/main.js'></script>";
