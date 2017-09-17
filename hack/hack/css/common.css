@@ -372,3 +372,26 @@
     margin-left: 93%;
     padding: 4px;
 }
+.divlogin{
+	width: 75%;
+	font-family: Roboto,sans-serif !important;
+    font-size: 25px !important;
+}
+.welcome{
+	float: right;
+    padding-top: 3%;
+	text-decoration: none;
+    color: #f0f8ff;
+}
+.divlogin4{
+	width: 16%;
+    font-size: 30px;
+	font-family: Roboto,sans-serif !important;
+}
+.usernamelogin{
+	margin: auto;
+    padding-top: 4%;
+    padding-left: 20%;
+    text-decoration: none;
+    color: #f0f8ff;
+}
