@@ -1,0 +1,71 @@
+<html>
+<head>
+<title>LOGIN : <?php echo $_SESSION['project_username']; ?></title>
+<link rel="stylesheet" type="text/css" href="../css/common.css" />
+<script type="text/javascript" src="../js/jquery.min.js"></script>
+</head>
+<style type="text/css">
+#content-wrap{
+	display:none;
+	margin:auto;
+	}
+maniawall{
+	background-image: url("/hack/images/try1.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+#content-wrap{
+	background-image: url("/hack/images/pic.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-attachment:fixed;
+	}
+	
+</style>
+
+<body id="content-wrap">
+	<div class="content-wrap">
+	<div id="divmain">
+		<div class="divlogin">
+			<p class="Mainmania">Project Mania
+		</div>
+		<div style="width:9%;">
+			<p class="welcome">Welcome 
+			</p>
+		</div>
+		<div class='divlogin4'>
+			<p class="usernamelogin"><span><?php echo $_SESSION['project_username']; ?></span>
+		</div>
+		<form class="divmain4" action= "../php/logout.php" method= "post">
+		<button id='Login' type="submit" value="Log out">Log out</button>
+		</form>
+	</div>
+	
+	<div style="margin-top:13%;">
+		<div>
+			<p class="pclass">Search For Projects 
+		</div>
+		<div style="margin: 0px auto;width: 670px;">
+			<input id="inputtext" style="padding:15px;width:680px;" type="text" placeholder="Enter Project Name or Keyword" autofocus><span class="glyphicon glyphicon-search"> </span></input>
+		</div>
+		
+	<div id="cat" style="display:none;">
+	<p id="paraid" value=></p>
+	</div>
+	<div id="subcat" style="display:none;">
+	<p id="parasubid"></p>
+	</div>	 
+	
+	<footer class="foter">
+	<a href="html/faqpm.html" class="foota">FAQ</a>
+	<div>
+	<img src="../images/like.png" id="like">
+	</div>
+	<div>
+	<img src="../images/google.png" id="google">
+	</div>
+	</footer>
+</body>
+</html>
+
+<script type="text/javascript" src="../js/loginsearch.js"></script>
